@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x;
+    cout << "В каком ты классе?";
+    cin >> x;
+    switch(x)
+    {
+        case 1: 
+            cout << "Привет, первоклассник\n";
+            break;
+        case 2: 
+            cout << "Привет, второклассник\n";
+            break;
+        case 3: 
+            cout << "Привет, третьеклассник\n";
+            break;
+        case 4:
+            cout  << "Привет, четвероклассник\n";
+            break;
+        case 5: 
+            cout << "Привет, пятиклассник\n";
+            break;
+        case 6: 
+            cout << "Привет, шестиклассник\n";
+            break;
+         case 7:
+            cout << "Привет, семиклассник\n";
+            break;
+        case 8: 
+            cout  << "Привет, восьмиклассник\n";
+            break;
+        case 9: 
+            cout  << "Привет, девятиклассник\n";
+            break;
+        case 10:    
+            cout << "Привет, десятиклассник\n";
+            break;
+        case 11: 
+            cout << "Привет, одиннадцатиклассник\n";
+            break;
+        default: 
+            cout << "x is undefined" << "\n";
+            break;
+    }
+}
