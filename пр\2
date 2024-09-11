@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+double summa (double x, double y)
+{
+    double z;
+    z=x+y;
+    return z;
+}
+double cp (double x)
+{
+    double z;
+    z = 5 - pow(sin(sqrt(x+1)), 2)-(sin(sqrt(x-1)));
+   
+    return z;
+}
+
+int main() {
+    double a = 5, b = 4, s, res;
+    s = summa(a, b);
+    res = cp(a);
+    cout << "Сумма равна " << s << "\n";
+    cout << "Результат  " << res;
+    return 0;
+}
