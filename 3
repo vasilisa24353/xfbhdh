@@ -1,0 +1,18 @@
+
+#include <iostream>
+using namespace std;
+
+void Swap(double& x, double& y)
+{
+    double time;
+    time = x;
+    x = y;
+    y = time;
+}
+int main(){
+    
+    double a = 3, b = 4;
+    Swap(a, b);
+    cout << a << "    " << b;
+    return 0;
+}
