@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int main() {
+int temp; cout<<"Температура?";
+cin>>temp;
+    if(temp < 60)cout<<"непожароопасная ситуация";
+    if(temp > 60)cout<<"пожароопасная ситуация";
+        return 0;
+    }
