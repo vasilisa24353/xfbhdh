@@ -1,0 +1,33 @@
+#include <iostream>
+#include <sstream>
+using namespace std;
+
+int SumDigits (unsigned long long num)
+{
+	int sum=0;
+	while (num)
+	{
+		sum+=num%10;
+		num/=10;        
+	}    
+	return sum;
+}
+
+int main ()
+{
+	int n, s;
+	unsigned long long k=1LL;
+	cout << "n="; cin >> n;
+	cout << "s="; cin >> s;
+	
+	for (int i = 1; i <= n; i++)
+		k*=10;
+	
+	for (unsigned long long j = k/10LL; j < k; j++)
+	{            
+		if(SumDigits(j)==s) cout << j << "\n";   
+	}
+	
+	system("pause");
+	return 0;
+}
